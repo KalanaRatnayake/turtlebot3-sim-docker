@@ -16,6 +16,7 @@ RUN apt-get install -y --no-install-recommends ros-dev-tools \
     python3-rosdep \
     python3-rosinstall-generator \
     build-essential \
+    ros-$ROS_DISTRO-ros-gz-dev \
     ros-$ROS_DISTRO-ros-gz
 
 RUN apt-get clean
