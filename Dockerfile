@@ -11,8 +11,9 @@ RUN apt-get update -y
 RUN apt-get install -y --no-install-recommends ros-dev-tools \
                                                 ros-$ROS_DISTRO-tf2-eigen \
                                                 ros-$ROS_DISTRO-rmw-cyclonedds-cpp \
-                                                ros-$ROS_DISTRO-turtlebot3* \
-                                                ros-jazzy-desktop \
+                                                ros-$ROS_DISTRO-turtlebot4-simulator \
+                                                ros-$ROS_DISTRO-irobot-create-nodes \
+                                                ros-$ROS_DISTRO-desktop \
                                                 python3-rosdep \
                                                 python3-rosinstall-generator \
                                                 build-essential
@@ -27,4 +28,4 @@ RUN rosdep init && rosdep update
 
 ENTRYPOINT ["/ros_entrypoint.sh"]
 
-CMD ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+CMD ros2 launch turtlebot4_gz_bringup turtlebot4_gz.launch.py

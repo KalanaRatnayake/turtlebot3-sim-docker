@@ -1,7 +1,7 @@
 version: '3'
 services:
-    simulation:
-        image: ghcr.io/kalanaratnayake/turtlebot3-ros
+    turtle3-simulation:
+        image: ghcr.io/kalanaratnayake/turtlebot3-ros:jazzy
         restart: unless-stopped                 # Restart the container unless manually stopped
         volumes:
           - /tmp/.X11-unix:/tmp/.X11-unix:rw    # GUI related

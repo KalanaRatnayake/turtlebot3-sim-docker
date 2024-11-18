@@ -1,8 +1,15 @@
 # turtlebot3-sim-docker
 
-## Build
+## Pull
 
 ```bash
-docker build -t turtlebot3-simulation:jazzy .
+docker compose pull
+```
+
+## Start
+
+```bash
+xhost +local:root
+docker compose up
 ```
 
