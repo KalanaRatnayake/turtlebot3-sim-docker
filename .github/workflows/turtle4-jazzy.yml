@@ -1,4 +1,4 @@
-name: ROS Jazzy Turtlebot3
+name: ROS Jazzy Turtlebot4
 
 on:
   workflow_dispatch:

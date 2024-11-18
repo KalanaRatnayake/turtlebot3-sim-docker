@@ -27,6 +27,7 @@ RUN apt-get clean
 WORKDIR ${WORKSPACE_ROOT}/src
 
 RUN git clone https://github.com/turtlebot/turtlebot4_simulator.git -b jazzy
+RUN git clone https://github.com/iRobotEducation/create3_sim.git -b jazzy
 
 RUN rm /etc/ros/rosdep/sources.list.d/20-default.list
 
