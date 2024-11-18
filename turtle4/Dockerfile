@@ -75,7 +75,7 @@ ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 COPY --from=base / /
 
-COPY /workspace_entrypoint.sh /workspace_entrypoint.sh
+COPY workspace_entrypoint.sh /workspace_entrypoint.sh
 
 RUN chmod +x /workspace_entrypoint.sh
 

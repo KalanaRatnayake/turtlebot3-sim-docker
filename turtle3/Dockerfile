@@ -77,7 +77,7 @@ ENV TURTLEBOT3_MODEL=waffle
 
 COPY --from=base / /
 
-COPY /workspace_entrypoint.sh /workspace_entrypoint.sh
+COPY workspace_entrypoint.sh /workspace_entrypoint.sh
 
 RUN chmod +x /workspace_entrypoint.sh
 
