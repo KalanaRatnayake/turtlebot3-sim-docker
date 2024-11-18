@@ -21,9 +21,9 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN rm -rf /tmp/*
 RUN apt-get clean
 
-# Initialize rosdep
-RUN rosdep init && \
-    rosdep update
+RUN rm /etc/ros/rosdep/sources.list.d/20-default.list
+
+RUN rosdep init && rosdep update
 
 ENTRYPOINT ["/ros_entrypoint.sh"]
 
