@@ -1,6 +1,6 @@
 version: '3'
 services:
-    turtle3-simulation:
+    turtle4-simulation:
         image: ghcr.io/kalanaratnayake/turtlebot3-ros:jazzy
         restart: unless-stopped                 # Restart the container unless manually stopped
         volumes:

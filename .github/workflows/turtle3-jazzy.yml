@@ -1,4 +1,4 @@
-name: ROS Jazzy Turtlebot4
+name: ROS Jazzy Turtlebot3
 
 on:
   workflow_dispatch:
@@ -18,7 +18,7 @@ on:
 env:
   REGISTRY: ghcr.io
   OWNER: kalanaratnayake
-  IMAGE_NAME: turtlebot4-ros
+  IMAGE_NAME: turtlebot3-ros
 
 # https://docs.github.com/en/actions/using-jobs/using-concurrency
 concurrency:
@@ -58,7 +58,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: turtle4/Dockerfile
+          file: turtle3/Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
