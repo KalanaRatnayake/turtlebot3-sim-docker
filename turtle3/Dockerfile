@@ -29,6 +29,7 @@ WORKDIR ${WORKSPACE_ROOT}/src
 
 RUN git clone https://github.com/ROBOTIS-GIT/turtlebot3.git -b humble-devel
 RUN git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git -b humble-devel
+RUN git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git -b ros2
 
 RUN rm /etc/ros/rosdep/sources.list.d/20-default.list
 
